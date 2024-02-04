@@ -1,0 +1,22 @@
+{% extends 'hosting/base.html' %}
+{% block title %}
+	Hosting
+{% endblock %}
+{% block body %}
+  {% if object_list %}
+    <div>
+    {% for video in object_list %}
+      <div>
+        <p>Name: {{ product.title }}</p>
+      </div>
+    {% endfor %}
+
+    </div>
+    <div>
+      <a href="{% url "hosting:upload-video" %}"
+      >Create Video</a>
+    </div>
+  {% else %}
+    <h3>No videos yet</h3>
+  {% endif %}
+{% endblock %}
