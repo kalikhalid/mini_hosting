@@ -1,4 +1,4 @@
-from mini_hosting.minihosting.myauth.views import profile
+from .views import profile
 from django.contrib.auth.views import LoginView, LogoutView
 from django.urls import path
 

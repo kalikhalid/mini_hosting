@@ -5,8 +5,8 @@ from django.views.generic import DetailView
 from django.urls import reverse_lazy
 
 
-def profile(self, request: HttpRequest):
-    return render(request, 'myauth/profole.html')
+def profile(request: HttpRequest):
+    return render(request, 'myauth/profile.html')
 
 
 
