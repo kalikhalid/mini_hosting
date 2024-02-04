@@ -38,7 +38,11 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
 
+<<<<<<< HEAD
     'hosting.apps.HostingConfig',
+=======
+    'myauth.apps.MyauthConfig',
+>>>>>>> ae610ff32f13c794f018165603392c1da19bc8f0
 ]
 
 MIDDLEWARE = [
