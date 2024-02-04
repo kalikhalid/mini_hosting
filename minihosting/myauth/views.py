@@ -6,7 +6,7 @@ from django.urls import reverse_lazy
 
 
 def profile(self, request: HttpRequest):
-    return render(request, 'myauth/profole.html')
+    return render(request, 'myauth/profile.html')
 
 
 
@@ -27,21 +27,3 @@ def profile(self, request: HttpRequest):
 
 
 
-
-# def login_view(request: HttpRequest) -> HttpResponse:
-#     if request.method == "GET":
-#         if request.user.is_authenticated:
-#             return redirect('/admin/')
-#
-#         return render(request, "accounts/login.html")
-#
-#     username = request.POST["username"]
-#     password = request.POST["password"]
-#
-#     user = authenticate(request, username=username, password=password)
-#     if user is not None:
-#         login(request, user)
-#         return redirect('/admin/')
-#     return render(request, "accounts/login.html", {"error": "Invalid login credentials"})
-#
-#
